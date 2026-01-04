@@ -66,8 +66,21 @@
   .intro{text-align:center;color:#414141;font-size:28px;font-weight:700;margin-top:6px;}
   .date-big{text-align:center;font-weight:700;letter-spacing:.08em;color:#414141;font-size:clamp(48px,12vw,130px);line-height:1;margin:16px 0 0;user-select:none;}
   .script{text-align:center;font-family:"Great Vibes",cursive;font-size:clamp(34px,6.2vw,60px);color:#6e6e6e;margin-top:-6px;}
-  .names{text-align:center;font-size:clamp(24px,3.2vw,36px);font-weight:700;margin-top:10px;}
-  .u-red{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px;}
+  /* .names{text-align:center;font-size:clamp(24px,3.2vw,36px);font-weight:700;margin-top:10px;} */
+  .names {
+    text-align: center;
+    font-size: clamp(24px, 3.2vw, 36px);
+    font-weight: 700;   /* bold text */
+    margin-top: 10px;   /* spacing above */
+  }
+
+  .names span {
+    display: block;      /* each name on its own line */
+    text-align: center;  /* center each line */
+    line-height: 1.0;    /* spacing between lines */
+    margin: 5px 0;       /* vertical spacing for each name */
+  }
+  /* .u-red{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px;} */
   .details{text-align:center;margin-top:10px;font-size:17px;}
   .muted{color:var(--muted);}
   .small{font-size:14px;}
@@ -118,10 +131,12 @@
     <p class="intro">Con inmensa alegría y agradecimiento a Hashem<br>queremos invitarlos a</p>
 
     <div class="date-big">12 03 26</div>
-    <div class="script">Nuestra Jupá + Fiesta!!</div>
+    <div class="script">Nuestra jupá y fiesta</div>
 
     <div class="names">
-      <span class="u-red">Alon Wengierko</span> &amp; <span class="u-red">Brenda Nicole Savelski</span>
+      <span class="u-red">Alon Wengierko</span> 
+      <span class="amp">&amp;</span>
+      <span class="u-red">Brenda Nicole Savelski</span>
     </div>
 
     <div class="details">
@@ -132,7 +147,7 @@
 
     <div class="row">
       <a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/m7P25PJHxcghDqyeA">📍 Abrir en Google Maps</a>
-      <a class="link-ghost uline" href="https://forms.gle/gxzA8uSDyqXkXQgv5">👉 Confirmar asistencia</a>
+      <a class="link-ghost uline" href="https://forms.gle/KEJGUN1JNoQiZHd49">👉 Confirmar asistencia</a>
     </div>
 
     <!-- <div class="divider" aria-hidden="true">
