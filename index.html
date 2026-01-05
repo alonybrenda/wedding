@@ -15,12 +15,7 @@
 <!-- Tipografías -->
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
-@media (max-width:480px){
-  .hero{
-    height:55vh;
-    background-position: center 35%;
-  }
-}
+
 
 <style>
 :root{
@@ -58,7 +53,7 @@ a{color:inherit;text-decoration:none}
   overflow:hidden;
 }
 
-/* HERO (imagen superior) */
+/* HERO (top image) */
 .hero{
   height:min(65vh, 700px);
   background-image:url("assets/fondo.jpeg");
@@ -67,7 +62,7 @@ a{color:inherit;text-decoration:none}
   background-repeat:no-repeat;
 }
 
-/* CONTENIDO */
+/* CONTENT */
 .content{
   padding:40px 28px 30px;
   position:relative;
@@ -151,11 +146,14 @@ a{color:inherit;text-decoration:none}
   margin-top:16px;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+   ========================= */
 @media (max-width:480px){
 
   .hero{
     height:55vh;
+    background-position:center 35%;
   }
 
   .content{
@@ -164,6 +162,7 @@ a{color:inherit;text-decoration:none}
 
   .intro{
     font-size:20px;
+    line-height:1.4;
   }
 
   .details{
