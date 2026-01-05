@@ -171,11 +171,34 @@
         Si querés acompañarnos también con un regalo, nos ayudaría mucho para armar nuestro hogar.<br>
         Te compartimos los datos:
       </p>
-      <p class="alias-large">alon.brenda.ars</p>
+      <!-- <p class="alias-large">alon.brenda.ars</p>
       <div class="alias-btn">
         <button class="btn" id="copyAlias">💳 Copiar alias</button>
       </div>
-      <p class="muted small" style="margin-top:4px">Alias Pesos</p>
+      <p class="muted small" style="margin-top:4px">Alias Pesos</p> -->
+  <!-- Row with both aliases -->
+
+  <div class="gift-alias-row" style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:16px;">
+
+    <!-- Alias ARS -->
+    <div class="gift-alias" style="text-align:center; min-width:180px;">
+      <p class="alias-large" id="alias-ars">alon.brenda.ars</p>
+      <div class="alias-btn">
+        <button class="btn" onclick="copyAlias('alias-ars')">💳 Copiar alias</button>
+      </div>
+      <p class="muted small" style="margin-top:4px">Alias Pesos (ARS)</p>
+    </div>
+
+    <!-- Alias USD -->
+    <div class="gift-alias" style="text-align:center; min-width:180px;">
+      <p class="alias-large" id="alias-usd">alon.brenda.usd</p>
+      <div class="alias-btn">
+        <button class="btn" onclick="copyAlias('alias-usd')">💳 Copiar alias</button>
+      </div>
+      <p class="muted small" style="margin-top:4px">Alias Dólares (USD)</p>
+    </div>
+
+  </div>
     </div>
   </div>
 
@@ -185,13 +208,13 @@
 </div>
 
 <script>
-  // Copiar alias
-  document.getElementById("copyAlias").addEventListener("click", () => {
-    navigator.clipboard.writeText("alonybrenda");
-    const btn = document.getElementById("copyAlias");
-    btn.textContent = "✔ Alias copiado";
-    setTimeout(() => btn.textContent = "💳 Copiar alias", 1800);
+function copyAlias(id) {
+  const aliasText = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(aliasText).catch(err => {
+    console.error('Error al copiar:', err);
   });
+}
+</script>
 </script>
 </body>
 </html>
