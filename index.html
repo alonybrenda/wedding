@@ -15,8 +15,6 @@
 <!-- Tipografías -->
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
-
-
 <style>
 :root{
   --bg:#f3f1ee;
@@ -53,13 +51,19 @@ a{color:inherit;text-decoration:none}
   overflow:hidden;
 }
 
-/* HERO (top image) */
+/* HERO (image top) */
 .hero{
   height:min(65vh, 700px);
-  background-image:url("assets/fondo.jpeg");
-  background-size:cover;
-  background-position:center top;
-  background-repeat:no-repeat;
+  overflow:hidden;
+  border-radius:26px 26px 0 0;
+}
+
+.hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 35%;
+  display:block;
 }
 
 /* CONTENT */
@@ -153,7 +157,10 @@ a{color:inherit;text-decoration:none}
 
   .hero{
     height:55vh;
-    background-position:center 35%;
+  }
+
+  .hero img{
+    object-position:center 25%;
   }
 
   .content{
@@ -195,7 +202,10 @@ a{color:inherit;text-decoration:none}
 
   <div class="card">
 
-    <div class="hero"></div>
+    <!-- HERO IMAGE -->
+    <div class="hero">
+      <img src="assets/fondo.jpeg" alt="Invitación">
+    </div>
 
     <div class="content">
       <div class="bhe">ב״ה</div>
