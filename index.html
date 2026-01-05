@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Invitación · Alon & Brenda</title>
 
-<!-- Vista previa para WhatsApp/Redes -->
+<!-- Vista previa redes -->
 <meta property="og:title" content="Invitación · Alon & Brenda">
-<meta property="og:description" content="¡Nos casamos! Jupá · 30/11/2025 · Billinghurst 664 · CABA">
+<meta property="og:description" content="¡Nos casamos! Jupá · 12/03/2026 · Madero Tango · CABA">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/fondo.jpeg">
 <meta name="twitter:card" content="summary_large_image">
@@ -16,210 +16,237 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --bg:#f3f1ee;
-    --paper:#fbfaf8;
-    --ink:#2e2e2e;
-    --muted:#6b6b6b;
-    --accent:#c84e4e;
-    --green:#6b7f6a;
+:root{
+  --bg:#f3f1ee;
+  --paper:#fbfaf8;
+  --ink:#2e2e2e;
+  --muted:#6b6b6b;
+  --accent:#c84e4e;
+  --green:#6b7f6a;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+
+body{
+  font-family:"Cormorant Garamond", serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.55;
+}
+
+a{color:inherit;text-decoration:none}
+
+.wrap{
+  max-width:860px;
+  margin:28px auto;
+  padding:16px;
+}
+
+/* CARD */
+.card{
+  border-radius:26px;
+  background:var(--paper);
+  box-shadow:0 14px 36px rgba(0,0,0,.08);
+  overflow:hidden;
+}
+
+/* HERO (imagen superior) */
+.hero{
+  height:min(65vh, 700px);
+  background-image:url("assets/fondo.jpeg");
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+}
+
+/* CONTENIDO */
+.content{
+  padding:40px 28px 30px;
+  position:relative;
+}
+
+.bhe{
+  position:absolute;
+  right:22px;
+  top:16px;
+  font-weight:700;
+  letter-spacing:.05em;
+}
+
+.intro{
+  text-align:center;
+  font-size:28px;
+  font-weight:700;
+  margin-top:10px;
+}
+
+.details{
+  text-align:center;
+  font-size:24px;
+  margin-top:10px;
+}
+
+.muted{color:var(--muted)}
+.small{font-size:14px}
+
+.row{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin:18px 0;
+}
+
+.btn{
+  border:none;
+  cursor:pointer;
+  padding:12px 18px;
+  border-radius:14px;
+  background:var(--green);
+  color:#fff;
+  font-weight:600;
+  box-shadow:0 8px 18px rgba(107,127,106,.28);
+}
+
+.link-ghost{
+  background:#fff;
+  color:var(--green);
+  border:2px solid var(--green);
+  border-radius:14px;
+  padding:10px 16px;
+  font-weight:700;
+}
+
+.hr{
+  height:1px;
+  background:#eee;
+  margin:18px 0;
+}
+
+.gift-header{
+  text-align:center;
+  font-style:italic;
+  max-width:680px;
+  margin:0 auto 14px;
+}
+
+.alias-large{
+  font-size:28px;
+  font-weight:700;
+  color:var(--green);
+}
+
+.gift-alias-row{
+  display:flex;
+  justify-content:center;
+  gap:50px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+
+/* MOBILE */
+@media (max-width:480px){
+
+  .hero{
+    height:55vh;
   }
 
-  *{box-sizing:border-box}
-  html,body{margin:0}
-  body{
-    font-family:"Cormorant Garamond", ui-serif, Georgia, "Times New Roman", serif;
-    color:var(--ink);
-    background:var(--bg);
-    line-height:1.55;
+  .content{
+    padding:32px 16px 26px;
   }
 
-  a{color:inherit;text-decoration:none}
-
-  .wrap{
-    max-width:860px;
-    margin:28px auto;
-    padding:16px;
+  .intro{
+    font-size:20px;
   }
 
-  .card{
-    position:relative;
-    border-radius:26px;
-    padding:700px 28px 30px;
-    background-color:var(--paper);
-    background-image:url("assets/fondo.jpeg");
-    background-repeat:no-repeat;
-    background-size: 115% auto;
-    background-position:-60px -20px;
-    box-shadow:0 14px 36px rgba(0,0,0,.08);
-    overflow:hidden;
+  .details{
+    font-size:18px;
   }
 
-  @media (max-width:480px){
-    .card{
-      background-size:560px auto;
-      background-position:-130px -90px;
-    }
+  .row{
+    flex-direction:column;
   }
 
-  .bhe{position:absolute; right:22px; top:16px; font-weight:700; letter-spacing:.05em}
-  .intro{text-align:center;color:#414141;font-size:28px;font-weight:700;margin-top:6px;}
-  .continuacion{text-align:center;color:#414141;font-size:28px;font-weight:700;margin-top:2px;}
-
-  .date-big{text-align:center;font-weight:700;letter-spacing:.08em;color:#414141;font-size:clamp(48px,12vw,130px);line-height:1;margin:16px 0 0;user-select:none;}
-  .script{text-align:center;font-family:"Great Vibes",cursive;font-size:clamp(34px,6.2vw,60px);color:#6e6e6e;margin-top:-6px;}
-  /* .names{text-align:center;font-size:clamp(24px,3.2vw,36px);font-weight:700;margin-top:10px;} */
-  .names {
-    text-align: center;
-    font-size: clamp(24px, 3.2vw, 36px);
-    font-weight: 700;   /* bold text */
-    margin-top: 10px;   /* spacing above */
-  }
-
-  .names span {
-    display: block;      /* each name on its own line */
-    text-align: center;  /* center each line */
-    line-height: 1.0;    /* spacing between lines */
-    margin: 5px 0;       /* vertical spacing for each name */
-  }
-  /* .u-red{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:5px;} */
-  .details{text-align:center;margin-top:10px;font-size:24px;}
-  .muted{color:var(--muted);}
-  .small{font-size:14px;}
-
-  .row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:18px 0 6px;}
-  .btn{
-    border:none;cursor:pointer;padding:12px 18px;border-radius:14px;
-    background:var(--green);color:#fff;font-weight:600;letter-spacing:.02em;
-    box-shadow:0 8px 18px rgba(107,127,106,.28);
-    transition:transform .06s ease,filter .2s ease;
-  }
-  .btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+  .btn,
   .link-ghost{
-    background:#fff;color:var(--green);border:2px solid var(--green);
-    text-decoration:none;display:inline-flex;align-items:center;gap:6px;
-    border-radius:14px;padding:10px 16px;font-weight:700;
+    width:100%;
+    text-align:center;
   }
 
-  .divider{display:flex;align-items:center;justify-content:center;gap:10px;margin:18px 0;}
-  .divider .line{height:1px;width:120px;background:#cfcfcf;}
-  .divider svg{width:28px;height:28px;fill:none;stroke:var(--green);stroke-width:1.8;}
-
-  .hr{height:1px;background:#eee;margin:18px 0;}
-  .foot{text-align:center;font-size:16px;}
-
-  .gift-note{text-align:center;color:#4f4f4f;}
-  .gift-header{font-size:18px;line-height:1.6;margin:20px auto 14px;max-width:680px;font-style:italic;}
-  .alias-large{font-size:28px;font-weight:700;color:var(--green);margin:8px 0;}
-  .alias-btn{display:flex;justify-content:center;margin-top:6px;}
-
-  a.uline, .uline a{
-    color:inherit;text-decoration:underline;
-    text-decoration-color:var(--accent);
-    text-decoration-thickness:2px;
-    text-underline-offset:5px;
+  .alias-large{
+    font-size:22px;
   }
 
-  @media (max-width:420px){
-    .divider .line{width:80px;}
+  .gift-alias-row{
+    gap:20px;
   }
+}
 </style>
 </head>
+
 <body>
 <div class="wrap">
+
   <div class="card">
-    <div class="bhe">ב״ה</div>
 
-    <p class="intro">Con inmensa alegría y agradecimiento a Hashem<br> queremos invitarlos a nuestra jupá y fiesta. </p>
-    <!-- <p class="continuacion">jueves 12 de marzo 2026, 23 de Adar 5786 · 18 hs</p> -->
-    <!-- <div class="names">
-      <span class="u-red">Alon Wengierko</span> 
-      <span class="amp">y </span>
-      <span class="u-red">Brenda Nicole Savelski</span>
-    </div> -->
-    
-    <!-- <p class="intro">queremos invitarlos a</p> -->
+    <div class="hero"></div>
 
-    <!-- <div class="intro">nuestra jupá y fiesta</div> -->
-    <!-- <div class="date-big">12 03 26</div> -->
+    <div class="content">
+      <div class="bhe">ב״ה</div>
 
-
-    <div class="details">
-      <p><strong>jueves 12 de marzo 2026, 23 de Adar 5786 · 18 hs</strong></p>
-      <p class="uline"><strong>  Madero Tango</strong></p>
-      <p class="uline"><strong>Avenida Alicia Moreau de Justo y Brasil · CABA</strong></p>
-      <p class="muted small uline">Ingreso únicamente con registro previo y DNI</p>
-    </div>
-
-    <div class="row">
-      <a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/m7P25PJHxcghDqyeA">📍 Abrir en Google Maps</a>
-      <a class="link-ghost" target="_blank" rel="noopener" href="https://forms.gle/KEJGUN1JNoQiZHd49">👉 Confirmar asistencia</a>
-    </div>
-
-    <!-- <div class="divider" aria-hidden="true">
-      <span class="line"></span>
-      <svg viewBox="0 0 24 24"><path d="M12 20s-6-3.5-6-8a3.5 3.5 0 0 1 6-2.5A3.5 3.5 0 0 1 18 12c0 4.5-6 8-6 8z"/></svg>
-      <span class="line"></span>
-    </div> -->
-
-    <!-- <div class="foot">
-      <p>A continuación seguiremos festejando en</p>
-      <p class="uline"><strong>Salón Eijal Shimon · 7mo piso</strong></p>
-      <p class="muted small">Menú Carne</p>
-    </div> -->
-
-    <div class="hr"></div>
-
-    <div class="gift-note">
-      <p class="gift-header">
-        Lo más importante para nosotros es vivir juntos este día tan especial.<br>
-        Si querés acompañarnos también con un regalo, te lo agradecemos.<br>
-        Te compartimos los datos:
+      <p class="intro">
+        Con inmensa alegría y agradecimiento a Hashem<br>
+        queremos invitarlos a nuestra jupá y fiesta.
       </p>
-      <!-- <p class="alias-large">alon.brenda.ars</p>
-      <div class="alias-btn">
-        <button class="btn" id="copyAlias">💳 Copiar alias</button>
-      </div>
-      <p class="muted small" style="margin-top:4px">Alias Pesos</p> -->
-  <!-- Row with both aliases -->
 
-  <div class="gift-alias-row" style="display:flex; justify-content:center; gap:50px; flex-wrap:wrap; margin-top:16px;">
-
-    <!-- Alias ARS -->
-    <div class="gift-alias" style="text-align:center; min-width:180px;">
-      <p class="alias-large" id="alias-ars">alon.brenda.ars</p>
-      <div class="alias-btn">
-        <button class="btn" onclick="copyAlias('alias-ars')">💳 Copiar alias</button>
+      <div class="details">
+        <p><strong>jueves 12 de marzo 2026 · 18 hs</strong></p>
+        <p><strong>Madero Tango</strong></p>
+        <p>Avenida Alicia Moreau de Justo y Brasil · CABA</p>
+        <p class="muted small">Ingreso únicamente con registro previo y DNI</p>
       </div>
-      <p class="muted small" style="margin-top:4px">alias pesos</p>
+
+      <div class="row">
+        <a class="btn" target="_blank" href="https://maps.app.goo.gl/m7P25PJHxcghDqyeA">
+          📍 Abrir en Google Maps
+        </a>
+        <a class="link-ghost" target="_blank" href="https://forms.gle/KEJGUN1JNoQiZHd49">
+          👉 Confirmar asistencia
+        </a>
+      </div>
+
+      <div class="hr"></div>
+
+      <p class="gift-header">
+        Lo más importante para nosotros es vivir juntos este día tan especial.
+        Si querés acompañarnos también con un regalo, te lo agradecemos.
+      </p>
+
+      <div class="gift-alias-row">
+
+        <div style="text-align:center">
+          <p class="alias-large" id="alias-ars">alon.brenda.ars</p>
+          <button class="btn" onclick="copyAlias('alias-ars')">💳 Copiar alias</button>
+          <p class="muted small">alias pesos</p>
+        </div>
+
+        <div style="text-align:center">
+          <p class="alias-large" id="alias-usd">alon.brenda.usd</p>
+          <button class="btn" onclick="copyAlias('alias-usd')">💳 Copiar alias</button>
+          <p class="muted small">alias dólares</p>
+        </div>
+
+      </div>
     </div>
-
-    <!-- Alias USD -->
-    <div class="gift-alias" style="text-align:center; min-width:180px;">
-      <p class="alias-large" id="alias-usd">alon.brenda.usd</p>
-      <div class="alias-btn">
-        <button class="btn" onclick="copyAlias('alias-usd')">💳 Copiar alias</button>
-      </div>
-      <p class="muted small" style="margin-top:4px">alias dólares</p>
-    </div>
-
   </div>
-    </div>
-  </div>
-
-  <!-- <p class="muted small" style="text-align:center;margin-top:10px">
-    © 2025 Alon &amp; Brenda · Invitación digital
-  </p> -->
 </div>
 
 <script>
-function copyAlias(id) {
-  const aliasText = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(aliasText).catch(err => {
-    console.error('Error al copiar:', err);
-  });
+function copyAlias(id){
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
 }
 </script>
-</script>
+
 </body>
 </html>
