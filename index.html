@@ -1,262 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Invitación · Alon & Brenda</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invitación · Alon & Brenda</title>
 
-<!-- Tipografías -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
-<style>
-:root{
-  --bg:#f3f1ee;
-  --paper:#fbfaf8;
-  --ink:#2e2e2e;
-  --muted:#6b6b6b;
-  --green:#6b7f6a;
-}
-
-*{box-sizing:border-box}
-html,body{margin:0}
-
-body{
-  font-family:"Cormorant Garamond", serif;
-  background:var(--bg);
-  color:var(--ink);
-  line-height:1.55;
-}
-
-a{color:inherit;text-decoration:none}
-
-.wrap{
-  max-width:860px;
-  margin:28px auto;
-  padding:16px;
-}
-
-/* CARD */
-.card{
-  border-radius:26px;
-  background:var(--paper);
-  box-shadow:0 14px 36px rgba(0,0,0,.08);
-  overflow:hidden;
-}
-
-/* HERO */
-.hero{
-  height:min(65vh, 700px);
-  overflow:hidden;
-  border-radius:26px 26px 0 0;
-}
-
-.hero img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center 35%;
-  display:block;
-}
-
-/* CONTENT */
-.content{
-  padding:40px 28px 30px;
-  position:relative;
-}
-
-.bhe{
-  position:absolute;
-  right:22px;
-  top:16px;
-  font-weight:700;
-  letter-spacing:.05em;
-  z-index:2; /* ensure it appears above the hero image */
-}
-
-.intro{
-  text-align:center;
-  /* responsive font: scales between 16px and 28px */
-  font-size: clamp(16px, 4vw, 28px);
-  line-height:1.4;
-}
-
-.nowrap{
-  white-space:nowrap; /* prevents breaking */
-}
-
-.details{
-  text-align:center;
-  font-size:clamp(16px,3vw,24px);
-  margin-top:10px;
-}
-
-.muted{color:var(--muted)}
-.small{font-size:14px}
-
-.row{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  margin:18px 0;
-}
-
-.btn{
-  border:none;
-  cursor:pointer;
-  padding:12px 18px;
-  border-radius:14px;
-  background:var(--green);
-  color:#fff;
-  font-weight:600;
-  box-shadow:0 8px 18px rgba(107,127,106,.28);
-}
-
-.link-ghost{
-  background:#fff;
-  color:var(--green);
-  border:2px solid var(--green);
-  border-radius:14px;
-  padding:10px 16px;
-  font-weight:700;
-}
-
-.hr{
-  height:1px;
-  background:#eee;
-  margin:18px 0;
-}
-
-.gift-header{
-  text-align:center;
-  font-style:italic;
-  max-width:680px;
-  margin:0 auto 14px;
-}
-
-.alias-large{
-  font-size:clamp(18px,4vw,28px);
-  font-weight:700;
-  color:var(--green);
-}
-
-.gift-alias-row{
-  display:flex;
-  justify-content:center;
-  gap:50px;
-  flex-wrap:wrap;
-  margin-top:16px;
-}
-
-/* MOBILE */
-@media (max-width:480px){
-
-  .hero{
-    height:auto;
-    min-height:300px;
-  }
-
-  .hero img{
-    object-position:center 25%;
-  }
-
-  .content{
-    padding:10px 16px 26px;
-  }
-
-  .row{
-    flex-direction:column;
-  }
-
-  .btn,
-  .link-ghost{
-    width:100%;
-    text-align:center;
-  }
-
-  .gift-alias-row{
-    gap:20px;
-  }
-}
-</style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-<div class="wrap">
+  <div class="wrap">
+    <!-- Card Section -->
+    <section class="card">
 
-  <div class="card">
-
-    <!-- HERO IMAGE -->
-    <div class="hero">
-      <img src="assets/top.jpeg" alt="Invitación">
-    </div>
-    <div class="bhe">ב״ה</div>
-
-    <div class="content">
-
-      <p class="intro" style="margin-top:-20px;">
-        Con inmensa alegría y agradecimiento a <span class="nowrap">Hashem</span><br>
-        queremos invitarlos a nuestra jupá y fiesta.
-      </p>
-
-      <div class="details">
-        <p><strong>jueves 12 de marzo 2026 · 18 hs</strong></p>
-        <p><strong>Madero Tango</strong></p>
-        <p>Avenida Alicia Moreau de Justo y Brasil · CABA</p>
-        <p class="muted small">Ingreso únicamente con registro previo y DNI</p>
+      <!-- Hero Image Section -->
+      <div class="hero">
+        <img src="assets/top.jpeg" alt="Invitación">
       </div>
 
-      <div class="row">
-        <a class="btn" target="_blank" href="https://maps.app.goo.gl/m7P25PJHxcghDqyeA">
-          📍 Abrir en Google Maps
-        </a>
-        <a class="link-ghost" target="_blank" href="https://forms.gle/KEJGUN1JNoQiZHd49">
-          👉 Confirmar asistencia
-        </a>
-      </div>
+      <div class="bhe">ב״ה</div>
 
-      <div class="hr"></div>
+      <!-- Invitation Content Section -->
+      <div class="content">
 
-      <p class="gift-header">
-        Lo más importante para nosotros es vivir juntos este día tan especial.
-        Si querés acompañarnos también con un regalo, te lo agradecemos.
-      </p>
+        <!-- Introduction Text -->
+        <p class="intro" style="margin-top:-20px;">
+          Con inmensa alegría y agradecimiento a <span class="nowrap">Hashem</span><br>
+          queremos invitarlos a nuestra jupá y fiesta.
+        </p>
 
-      <div class="gift-alias-row">
-
-        <div style="text-align:center">
-          <p class="alias-large" id="alias-ars">alon.brenda.ars</p>
-          <button class="btn" onclick="copyAlias('alias-ars')">💳 Copiar alias</button>
-          <p class="muted small">alias pesos</p>
+        <!-- Event Details Section -->
+        <div class="details">
+          <p><strong>jueves 12 de marzo 2026 · 18 hs</strong></p>
+          <p><strong>Madero Tango</strong></p>
+          <p>Avenida Alicia Moreau de Justo y Brasil · CABA</p>
+          <p class="muted small">Ingreso únicamente con registro previo y DNI</p>
         </div>
 
-        <div style="text-align:center">
-          <p class="alias-large" id="alias-usd">alon.brenda.usd</p>
-          <button class="btn" onclick="copyAlias('alias-usd')">💳 Copiar alias</button>
-          <p class="muted small">alias dólares</p>
+        <!-- Button Section -->
+        <div class="row">
+          <a class="btn" target="_blank" href="https://maps.app.goo.gl/m7P25PJHxcghDqyeA">
+            📍 Abrir en Google Maps
+          </a>
+          <a class="link-ghost" target="_blank" href="https://forms.gle/KEJGUN1JNoQiZHd49">
+            👉 Confirmar asistencia
+          </a>
         </div>
 
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="hr"></div>
 
-<script>
-function copyAlias(id) {
-  const text = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(text)
-    .then(() => {
-      // Provide feedback to the user
-      const button = document.querySelector(`#${id} + button`);
-      button.innerText = '✔ Copiado!';
-      setTimeout(() => {
-        button.innerText = '💳 Copiar alias';
-      }, 2000);
-    })
-    .catch(() => {
-      alert('Error al copiar. Intenta de nuevo.');
-    });
-}
-</script>
+        <!-- Gift Information Section -->
+        <p class="gift-header">
+          Lo más importante para nosotros es vivir juntos este día tan especial.
+          Si querés acompañarnos también con un regalo, te lo agradecemos.
+        </p>
+
+        <!-- Gift Alias Section -->
+        <div class="gift-alias-row">
+          <div class="gift-item">
+            <p class="alias-large" id="alias-ars">alon.brenda.ars</p>
+            <button class="btn" onclick="copyAlias('alias-ars')">💳 Copiar alias</button>
+            <p class="muted small">alias pesos</p>
+          </div>
+          <div class="gift-item">
+            <p class="alias-large" id="alias-usd">alon.brenda.usd</p>
+            <button class="btn" onclick="copyAlias('alias-usd')">💳 Copiar alias</button>
+            <p class="muted small">alias dólares</p>
+          </div>
+        </div>
+        
+      </div> <!-- End of .content -->
+    </section> <!-- End of .card -->
+  </div> <!-- End of .wrap -->
+
+  <script src="script.js"></script>
 
 </body>
 </html>
